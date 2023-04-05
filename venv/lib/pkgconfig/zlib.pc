@@ -1,0 +1,13 @@
+prefix=/Users/prasantpoudel/Desktop/tweepy/venv
+exec_prefix=/Users/prasantpoudel/Desktop/tweepy/venv
+libdir=/Users/prasantpoudel/Desktop/tweepy/venv/lib
+sharedlibdir=/Users/prasantpoudel/Desktop/tweepy/venv/lib
+includedir=/Users/prasantpoudel/Desktop/tweepy/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

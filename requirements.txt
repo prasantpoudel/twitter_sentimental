@@ -1,0 +1,6 @@
+panda
+numpy
+tweepy
+streamlit
+# configparser
+# -e .

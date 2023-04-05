@@ -1,0 +1,19 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/Users/prasantpoudel/Desktop/tweepy/venv
+exec_prefix=/Users/prasantpoudel/Desktop/tweepy/venv
+libdir=/Users/prasantpoudel/Desktop/tweepy/venv/lib
+includedir=/Users/prasantpoudel/Desktop/tweepy/venv/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://tukaani.org/xz/
+Version: 5.2.10
+Cflags: -I${includedir}
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread
