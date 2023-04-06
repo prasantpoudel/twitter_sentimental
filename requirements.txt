@@ -2,5 +2,8 @@ panda
 numpy
 tweepy
 streamlit
+textblob
+matplotlib
+sys
 # configparser
 # -e .
