@@ -165,9 +165,6 @@ def analyse_hastag(data):
         raise CustomException(e,sys)
 
 
-
-
-
 def graph_sentiment(data):
     try:
         analys = data["Analysis"].value_counts().reset_index().sort_values(by="index", ascending=False)
@@ -179,7 +176,8 @@ def graph_sentiment(data):
 
 def cloud(data):
     try:
-        word_cloud = WordCloud(collocations = False, background_color = 'white').generate(data)
+        text = " ".join(cat.split()[1] for cat in data)
+        word_cloud = WordCloud(collocations = False, background_color = 'white').generate(text)
         logging.info('word cloud generate')
         return word_cloud
     except Exception as e:
